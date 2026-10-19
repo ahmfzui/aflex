@@ -1,0 +1,8 @@
+node_modules
+dist
+public/pdfjs
+*.log
+.vercel
+.DS_Store
+tests/fixtures/generated
+*.tsbuildinfo

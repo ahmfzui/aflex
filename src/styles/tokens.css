@@ -1,0 +1,65 @@
+/* AFlex design tokens — "Phantom File Lab" */
+:root {
+  color-scheme: dark;
+
+  /* Colour */
+  --ink: #0a0a0a;
+  --ink-2: #111111;
+  --surface: #171717;
+  --surface-2: #1f1f1f;
+  --surface-3: #262626;
+  --line: #2d2d2d;
+  --line-strong: #444444;
+  --red: #ff1744;
+  --red-hot: #ff3d63;
+  --red-deep: #a8001f;
+  --paper: #f5f2eb;
+  --paper-2: #e6e1d6;
+  --muted: #a1a1aa;
+  --muted-2: #8b8b94;
+  --pink: #ff5ca8; /* rare secondary accent */
+  --ok: #5ee6a0;
+  --warn: #ffc94a;
+
+  /* Type */
+  --font-display: 'Anton', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+  --font-body: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  --step--1: clamp(0.78rem, 0.76rem + 0.1vw, 0.84rem);
+  --step-0: clamp(0.95rem, 0.92rem + 0.15vw, 1.05rem);
+  --step-1: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.25rem + 1vw, 2.1rem);
+  --step-3: clamp(2rem, 1.5rem + 2.2vw, 3.4rem);
+  --step-4: clamp(2.6rem, 1.8rem + 3.8vw, 5.2rem);
+  --step-hero: clamp(3.4rem, 1.2rem + 10vw, 11rem);
+
+  /* Space & layout */
+  --gutter: clamp(16px, 4vw, 44px);
+  --maxw: 1320px;
+  --header-h: 64px;
+  --radius: 2px;
+  --cut: 16px;
+  --border: 2px;
+  --border-heavy: 4px;
+
+  /* Motion */
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.1, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 220ms;
+  --dur-3: 480ms;
+
+  /* Textures */
+  --halftone: radial-gradient(circle at center, currentColor 1.1px, transparent 1.5px);
+  --halftone-size: 9px 9px;
+  --stripes: repeating-linear-gradient(-55deg, transparent 0 9px, currentColor 9px 11px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-1: 0ms;
+    --dur-2: 0ms;
+    --dur-3: 0ms;
+  }
+}
